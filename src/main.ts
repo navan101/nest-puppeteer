@@ -23,6 +23,7 @@ async function bootstrap() {
   server.use(bodyParser.urlencoded({ extended: false }));
 
   const app = await NestFactory.create(AppModule);
+  app.setGlobalPrefix('v1/api')
   app.use(passport.initialize())
   app.use(passport.session())
 
@@ -40,9 +41,9 @@ async function bootstrap() {
 
   initDocumentation(app, {
     version: '1.0',
-    description: 'api',
-    title: 'api',
-    endpoint: '/docs',
+    description: 'Search api',
+    title: 'Search api',
+    endpoint: '/v1/api',
     
   });
 
