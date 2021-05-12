@@ -34,7 +34,7 @@
     "handlebars": "^4.7.3",
     "helmet": "^3.22.0",
     "morgan": "^1.10.0",
-    "nodemailer": "^6.4.6",
+    "nodemailer": "^6.4.16",
     "passport": "^0.4.1",
     "pug": "^2.0.4",
     "puppeteer": "^2.1.1",
